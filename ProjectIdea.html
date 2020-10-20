@@ -35,70 +35,145 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 					<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
 
 					<h2>Overview</h2>
-					<p>FlickDeck is an app developed to streamline decisions of what content on various streaming platforms to consume by linking user accounts in order to create a shared list of “liked” content chosen in a swipe left or right method made popular by applications such as Tinder.</p>
+					<p>With so much content available between various content streaming services – think of services like Netflix, Stan, Amazon Prime and Disney Plus, to name a few – it is becoming increasingly more difficult to decide on a title to watch. This is especially true when trying to choose a title for more than one person, as the question becomes can you find something you both enjoy? </p>
+					<p>Enter <b>FlickDeck</b>. An app designed to help streamline the process of deciding what to watch and where to access it from, FlickDeck offers the ability to link multiple user accounts and create a shared list of ‘liked’ or relatable content. These content lists are presented to each user in a simple card format: like the popular dating app Tinder, the user can swipe left or right on each content card to indicate if they like or dislike the content. Once a content match is found, the users will be alerted to the match and receive information of where to watch the content.</p>
 
 					<h2>Motivation</h2>
-					<p>Content streaming services have become the new norm for most households preferred method of entertainment, in Australia alone Netflix has 11.9 million subscribers and when it comes to deciding what to watch and 2016 American study found that on average users spend 17.8 minute browsing Netflix before choosing something to watch, and that 40 percent of users wanted to watch something deferent to their partner or spouse. While curator and aggregator apps such as reelgood and dinggo, (of which are unavailable to the Australian market at this stage) exist they do not focus on issue of partners not agreeing on something to watch where as FlickDeck’s specific purpose is to curate a list for a selected linked user group for consumption.</p>
+					<p>Content streaming services have fast developed to become the preferred method of entertainment for most households, with Australia alone boasting at least 11.9 million Netflix subscribers (Williams, 2020). When it comes to deciding on what to watch, however, a 2016 American study found that on average users spend over 17 minutes browsing Netflix before selecting something to watch; additionally, at least 40% of users were interested in watching something different to their partner or spouse (Moscaritolo, 2016).</p>
+					<p>While curator and aggregator apps such as reelgood and dinggo exist – neither of which are currently available in Australia - they do not address the issue of partners not agreeing on content to watch; FlickDeck’s specific purpose is to curate a list of content for a selected linked user group.</p>
 
 					<h2>Description</h2>
-					<p>FlickDeck could crudely be summed up as “Tinder for movies” in which users will be shown the poster/title card for a movie or show and the user is prompted to either swipe right if they are interested in the content or left if they are not interested. The main function of the app is that users will link their account with another user account, for example a partner or spouse, both of the users with linked accounts will be shown the same content on their separate devices. when users have both swiped right the selected piece of content will be added to a list that the users have access to and they will be alerted to the match. The content the app displays will be taken from a database of content that is available on selected streaming services (Netflix, Amazon, Stan etc.) that the users will indicate they have access to when creating an account.</p>
-					<p>The overall functionality and user experience within the app itself is purposely simple in an effort to have a streamlined decision process when users sit down to enjoy content, the users simply load up their lists of shared interests to select from rather than browsing for extended periods. There is also the possibility of having accounts linked to users streaming service accounts so that when a match is made it can be added to users' watch queues within the streaming service applications themselves. Streaming service account linking is however not a concern within the first iteration of this project.</p>
+					<p>FlickDeck could crudely be summed up as ‘Tinder, but for movies and TV shows.’</p>
+					<p>It will function as an application that can be downloaded on a smartphone or tablet device or accessed via a website. After accessing FlickDeck, users will be prompted to create an account with a unique username; once complete, they will be prompted to connect and link their account with another user they plan to watch content with, such as a partner or spouse. They will also be asked to confirm what current streaming services they have access to. Once linked, the content determining process will begin. Each user will be shown a content card that displays the poster and name of a specific movie or TV show. The user then has 2 choices:</p>
+					<li>Swipe right to indicate they are interested in the content</li>
+					<li>Swipe left to indicate they are not interested in the content</li></p>
+					<p>When FlickDeck recognises that linked users have both swiped right, or displayed interest in a content card, the users will be alerted to the match and then guided on where to stream or access the movie or TV show. In order to display updated content to users, FlickDeck will utilise a database of movies and TV shows taken from major streaming platform libraries, such as Netflix, Stan or Amazon Prime. It will then only access the data relevant to the user’s accessible streaming services.</p>
+					<p>The overall functionality and user experience of FlickDeck will be designed to be simple and intuitive, with the aim of streamlining the content-making decision so users can relax and enjoy the movie or TV show. This will be assisted by offering users a list of common interests to select from rather than browsing for extended periods. In the future, FlickDeck could also be further integrated with streaming services by allowing matched content to be added to the recommended or ‘watch next’ lists within the service itself.</p>
 
 					<h2>Tools and Technologies</h2>
-					<p>The development of this project will require a code editor such as Atom to edit the HTML, CSS and Java Script for any web interface or alternatively platforms such as phonegap or ionic framework could be employed. A compiler (Eclipse) and relevant IDEs and plugins are required to develop Swift and Kotlin applications or applications such as asswing2app that required no coding experience could be used. Prototyping can be completed using Figma, Sketch or Adobe XD and team collaboration with Microsoft Teams, Word, Excel and Miro.  A database will also need to be established to store the required data such as movie artwork, titles, list of actors, release date, runtime etc. This database would need to be cloud based and could be established using MariaDB.</p>
-					<p>Software required to develop the project:</p>
-					<p><li>Atom</li>
-						<li>Eclipse</li>
-						<li>Figma</li>
-						<li>GitHub</li>
-						<li>MariaDB</li>
-						<li>Microsoft Teams</li>
-						<li>Microsoft Word</li>
-						<li>Miro</li></p>
+					<p>To develop this project, we have categorised the tools and technologies required into two categories:</p>
+					<p><li><i>Planning, collaboration and design tools</i></li>
+					<li><i>Development tools</i>, which is further split into backend tools and frontend tools</li></p>
 
-						<h3>Figma</h3>
-						<p>Figma is a design prototyping and tool what can be used throughout the design and creation phases of digital products to create wireframes, design systems, prototypes and test. It is currently ranked as the second most popular UI design, and prototyping tool making very strong gains on Sketch – nearly doubling the number of users in the UI since 2018 (UXTools.co 2019). The application can be used directly through a web browser or windows and mac desktop apps can be downloaded if desired. iOS and Android apps are also available for download to allow for the live previewing of files in a test environment. (Figma 2020).</p>
-						<p>The application is highly focused on collaborative workflows with the ability to edit files together in real-time or to simply view the action in "observation mode". Files are also supported by version history with the ability to view what changes have been made by individual users. Access to the application is split into three pricing tiers Starter, Professional and Organisation with pricing ranging from free with limited use and users on the starter plan, $12usd per month for each user on the Professional plan or $45usd per month on the Organisation level plan. Students are eligible for free access to the Professional plan. (Figma 2020).</p>
-						<h3>The Open Movie Database</h3>
-						<p>When developing the FlickDeck application, an open-source API like The Open Movie Database (OMDb) could be used in the searching and filtering of movie and TV shows (OMDb API, n.d.).</p>
-						<p>Available as a web service online, the OMDb API obtains information about movies and TV shows from a database that is contributed to and maintained by its users. Obtaining a free API key will allow an application or website to search for a movie or TV show by title and return data containing the content’s year of release, content rating, runtime, genre, director and writer, cast, plot, awards & nominations, an image of the poster, and even user ratings through popular content website IMDB.</p>
-						<p>When a user likes or swipes right in FlickDeck on a displayed movie or TV show, the OMDb API could be used to query the database for that approved content and determine key factors including genre, cast, directors & writers, and year of release. This data could then be used to develop a viewing profile and allow FlickDeck to suggest more appropriate, relatable content.</p>
+					<h3>Planning, Collaboration and Design Tools</h3>
+					<p>For planning, collaboration and design tools we plan on continuing to use Microsoft Teams as the primary communication channel, with the additions of Miro for live collaborative planning sessions and Figma for product wireframes and prototypes.</p>
 
-						<h3>MariaDB</h3>
-						<p>Some form of database management system (DBMS), such as the open source MariaDB server (MariaDB Foundation, n.d.), would be required to store, sort, categorise, and establish links between the compiled movie and TV show data. Available through GitHub (GitHub, Inc. 2020), MariaDB Server is a relational database tool that organises data into tables which can be linked, or related, based on common attributes. With multiple fields for each record in the database, MariaDB Server allows for quick comparison between records and to create a new table using a single query.</p>
-						<p>As an example, a FlickDeck user may like or swipe right on a romantic-comedy movie released in 2008, starring Jane and John Doe. Based on this basic data, the MariaDB server could be queried to locate and return records that contain at least 2 of the following attributes:</p>
-						<p><ol>
-							<li>Year of release: 2008</li>
-							<li>Genre: romance, comedy</li>
-							<li>Cast: Jane Doe, John Doe</li>
-						</ol></p>
-						<p>These records would be returned as a singular table that could be used to display to the user relatable content. By storing more details about the movie or TV show and narrowing the scope of the database query, the relational database will return records that closer match the user’s viewing preferences and could help suggest more relatable content. A relational database could also compare and find similarities between multiple user’s data tables. MariaDB Server also allows for cloud integration.</p>
+					<p>Figma was chosen as the wireframing and prototyping tool as it is a tool that can be used throughout the design and creation phases of digital products to create wireframes, design systems, prototypes and tests. It is currently ranked as the second most popular UI design and prototyping tool, making very strong gains on Sketch by nearly doubling the number of users of the UI since 2018 (UXTools.co 2019). The application can be used directly through a web browser or the Windows and MacOS operating system. iOS and Android apps are also available for download to allow for the live previewing of files in a test environment. (Figma 2020).</p>
 
-						<h3>Unoffical API’s and Data Scraping</h3>
-						<p>In 2014 Netflix shutdown its public API, this creates a problem early on in the development of FlickDeck as the application has no access to an established database of the platforms current offerings to pull from in order to display user’s with intended content from the streaming platform.</p>
-						<p>There are several unofficial API’s such as Guidebox API that offer all the data and resources that can be pulled from streaming services but for a price.  These unofficial API’s are able to obtain their data through data scrapping.  Data scraping is a process in which data is extracted from readable text from external sources such as information stored in the HTML code of a website ((McClendon, 2015). Internally Netflix utilises an API to transfer information to its mobile application (Netflix Data Scraping API | Stevesie Data, 2020), it is this connection that can be intercepted to obtain the API data necessary for this project.</p>
-						<p>For a data scraping program to be able to intercept these connections the endpoints that handle the data wanted must be located. The process for this is fairly involved and requires virtualisation of the application on a computer based virtual phone operating system such as android and a network activity monitoring program such as Charles (McClendon, 2015).Using the app to go through actions that may net the access points of information we need such as clicking more information on a movie may give access to an endpoint that handles such data (McClendon, 2015). Once the appropriate points are found is when a data scraper program can be developed. Using the http URL’s that have been observed a scraper program can make pull requests from the same points to then store the data in a separate repository for the FlickDev team to access (McClendon, 2015). The implementation of such a strategy is subject to experience and resource availability as it may prove more economical for the development team to simply pay a fee to access an established API.</p>
+					<p>The application is highly focused on collaborative workflows with the ability to edit files together in real-time or to simply view the action in "observation mode". Files are also supported by version history with the ability to view what changes have been made by individual users. Access to the application is split into three pricing tiers: Starter, Professional, and Organisation; pricing ranges from free on the Starter plan (with limited use and users); $12 USD per month for each user on the Professional plan; or $45 USD per month on the Organisation level plan. Students are eligible for free access to the Professional plan. (Figma 2020).</p>
 
-						<h2>Skills Required</h2>
-						<p>A proficient skill set in coding will most likely be needed in this project as well as design skills when it comes to the user interface of the program this could be mocked up inproto.io and further transferred through to adobe applications to be worked upon further. A team that has experience in not only developing but maintaining an online operating service would be beneficial to the project.</p>
-						<ol>
-							<li>iOS and Android apps</li>
+					<h3>Development Tools</h3>
+
+					<p>A compiler (Eclipse) and relevant IDEs and plugins are required to develop Swift and Kotlin applications; alternatively, stand-alone app development applications such as swing2app that required no coding experience could be employed to reduce development time and to produce a minimum viable product. This would allow the application to be launched and tested with live users more rapidly than programming from scratch.</p>
+
+					<p>Data will need to be queried by utilising existing databases, employing unofficial APIs, or through data scraping; this data would then need to be stored in a main database, capable of operating over the cloud – see <i>Establishing a database</i>.</p>
+
+					<h3>Utilising existing databases</h3>
+
+					<p>FlickDeck will require a large amount of movie and TV show data which could be obtained through an open-source API like The Open Movie Database (OMDb) API (OMDb API, n.d.).</p>
+
+					<p>Available as a web service online, the OMDb API obtains information about movies and TV shows from a user-created and maintained database. Obtaining a free API key will allow an application or website to search for a movie or TV show by title and return data containing the content’s year of release, content rating, runtime, genre, director and writer, cast, plot, awards & nominations, an image of the poster, and even user ratings via content website IMDB.</p>
+
+					<p>When a user likes or swipes right in FlickDeck on a displayed movie or TV show, the OMDb API could be used to query the database for that approved content and determine key factors including genre, cast, directors & writers, and year of release. This data could then be used to develop a viewing profile and allow FlickDeck to suggest more appropriate, relatable content.</p>
+
+					<h3>Unofficial APIs and data scraping</h3>
+
+					<p>In 2014, Netflix completely closed its previously public API. For FlickDeck’s development, this means that the application will not be able to access an established content database of the streaming service platforms and cannot pull/display data directly from the service. To circumvent this, FlickDeck may need to utilise unofficial APis or employ data scraping tools to obtain the necessary data.</p>
+
+					<p>There are several unofficial API’s, such as Guidebox API, that offer a range of data and resources from streaming services at a cost.  These unofficial APIs mostly obtain this data through data scraping, which is a process in which information is pulled from the HTML code on a given website (McClendon, 2015). Netflix internally maintains an API to transfer information to its mobile application (Stevesie, LLC, 2020), and intercepting this network connection can be used to determine catalog data.</p>
+
+					<p>For a data scraping program to be able to intercept these connections, the endpoints that handle the data wanted must be located. The process for this is fairly involved and requires virtualisation of the application on a computer based virtual phone operating system such as android and a network activity monitoring program such as Charles (McClendon, 2015). Using the app to go through actions that may net the access points of information we need such as clicking more information on a movie may give access to an endpoint that handles such data (McClendon, 2015). Once the appropriate points are found is when a data scraper program can be developed. Using the http URL’s that have been observed a scraper program can make pull requests from the same points to then store the data in a separate repository for the FlickDev team to access (McClendon, 2015). The implementation of such a strategy is subject to experience and resource availability as it may prove more economical for the development team to simply pay a fee to access an established API.
+					</p>
+
+					<h3>Establishing a database</h3>
+
+					<p>Some form of database management system (DBMS), such as the open source MariaDB server (MariaDB Foundation, n.d.), would be required to store, sort, categorise, and establish links between the compiled movie and TV show data. Available through GitHub (GitHub, Inc. 2020), MariaDB Server is a relational database tool that organises data into tables which can be linked, or related, based on common attributes. With multiple fields for each record in the database, MariaDB Server allows for quick comparison between records and to create a new table using a single query.</p>
+
+					<p>As an example, a FlickDeck user may like or swipe right on a romantic-comedy movie released in 2008, starring Jane and John Doe. Based on this basic data, the MariaDB server could be queried to locate and return records that contain at least 2 of the following attributes:</p>
+					<p>
+					<ul>
+						<li>Year of release: 2008</li>
+						<li>Genre: romance, comedy</li>
+						<li>Cast: Jane Doe, John Doe</li>
+					</ul>
+					</p>
+
+					<p>These records would be returned as a singular table that could be used to display to the user relatable content. By storing more details about the movie or TV show and narrowing the scope of the database query, the relational database will return records that closer match the user’s viewing preferences and could help suggest more relatable content. A relational database could also compare and find similarities between multiple user’s data tables. MariaDB Server also allows for cloud integration.</p>
+
+					<h3>Front End Tools</h3>
+
+					<p>The development of this project will require a code editor such as Atom to edit the HTML, CSS and Java Script for any web interface or alternatively platforms such as phonegap or ionic framework could be employed.</p>
+
+					<p>Atom has been chosen as FlickDev’s primary code editor due to the availability of plugins that enable the expansion and customisation of the editor and its close integration with GitHub.
+
+					<h2>Skills Required</h2>
+
+					<p>A proficient skill set in coding will be required for this project, as well as design skills to develop the user interface of the application. A website like proto.io could be used to develop initial prototypes and further expanded using Adobe design applications. A team that has experience in developing and maintaining an online, cloud-based service would be extremely beneficial to the project. For specific systems and tools, the following skills are required:</p>
+
+					<p>
+					<ul>
+						<li>IOS and Android apps
 							<ul>
 								<li>iOS app development would require Swift (Apple, 2020).</li>
 								<li>Android app can be written in Kotlin (Android, 2020).</li>
 							</ul>
-							<li>Website</li>
-							<ul>
-								<li>HTML, CSS and JavaScript (GeeksforGeeks, 2020).</li>
-							</ul>
-							<li>Database</li>
-							<ul>
-								<li>MySql, PHP, and Java Script (Spinx, 2020).</li>
-							</ul>
-						</ol>
+						</li>
+					<li>Website</li>
+						<ul>
+							<li>HTML, CSS and JavaScript (GeeksforGeeks, 2020).</li>
+						</ul>
+					<li>Database</li>
+						<ul>
+							<li>MySql, PHP, and Java Script (Spinx, 2020).</li>
+						</ul>
+					</p>
 
-						<h2>Outcome</h2>
-						<p>If the project is successful it is reasonable to assume that on average more content will be consumed on a whole and that users of streaming services particularly those in households that watch content together will have a more enjoyable experience. Further into the future it is possible that the concept and execution of this application could be fully integrated into streaming services as they strive to provide a better user experience for their customers.</p>
+					<h2>Outcome</h2>
+
+					<p>If the FlickDeck project is successful, it is reasonable to assume that users will be able to consume more content; eliminating the stress and pressure of picking the ‘right’ movie or TV show will help create a more enjoyable and care-free experience for users and households. Further into the future, it is possible that the concept and execution of this application could be fully integrated into streaming services as they strive to provide a better user experience for their customers.<p>
+
+
+						<hr class="major" />
+
+					<h3>Reference List</h3>
+
+					<p>Android Developers n.d., Kotlin, viewed 17 September 2020 https://developer.android.com/kotlin.
+					<br>
+					<br>
+					Apple Developer 2020, Swift, viewed 17 September 2020 https://developer.apple.com/swift/.
+					<br>
+					<br>
+					Figma 2020, Design, manage, and deploy your design systems with Figma, viewed 16 October 2020, https://www.figma.com/.
+					<br>
+					<br>
+					GitHub, Inc. 2020, MariaDB / server, viewed 19 October 2020, https://github.com/MariaDB/server.
+					<br>
+					<br>
+					‘palaksinghal9903’ 2019, Frontend vs Backend, GeeksforGeeks, viewed 17 September 2020 https://www.geeksforgeeks.org/frontend-vs-backend/#:~:text=HTML%2C%20CSS%2C%20and%20Javascript%20are,implemented%20by%20front%20End%20developers.
+					<br>
+					<br>
+					MariaDB Foundation n.d., MariaDB Server: The open source relational database, viewed 19 October 2020, https://mariadb.org/.
+					<br>
+					<br>
+					McClendon, B. 2015, How I Built My First Mobile App Scraper, Northwestern University Knight Lab, viewed 20 October 2020 https://knightlab.northwestern.edu/2015/12/16/how-i-built-my-first-mobile-app-scraper/.
+					<br>
+					<br>
+					Moscaritolo, A. 2016, Netflix Users Waste Ton Of Time Searching For Something To Watch, PCMAG, viewed 17 October 2020 https://www.pcmag.com/news/netflix-users-waste-ton-of-time-searching-for-something-to-watch.
+					<br>
+					<br>
+					OMDb API n.d., OMDb API, viewed 17 October 2020, http://www.omdbapi.com/.
+					<br>
+					<br>
+					Spinx, 2020, Common Web Design Languages, What They Do and Why You Need Them, viewed 17 September 2020 https://www.spinxdigital.com/blog/common-web-design-languages-what-they-do-and-why-you-need-them/.
+					<br>
+					<br>
+					Stevesie, LLC 2020 Netflix Data Scraping API, viewed 20 October 2020 https://stevesie.com/apps/netflix-api.
+					<br>
+					<br>
+					UXTools.co 2019, 2019 Design Tools Survey Results - Uxtools.co, viewed 16 October 2020, https://uxtools.co/survey-2019/#ui-design.
+					<br>
+					<br>
+					Williams, C. 2020, Netflix Is Now A 'Legacy' Company In An Industry That Keeps On Growing, ABC News, accessed 17 October 2020 https://www.abc.net.au/news/2020-04-12/streaming-services-in-australia:-are-we-overwhelmed-for-choice/12141410#:~:text=Netflix%20has%20the%20most%20subscribers,and%20Stan%20(3.3%20million).
 
 						<hr class="major" />
 
@@ -126,7 +201,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 								<ul>
 									<li><a href="Profile_AndrewButler.html">Andrew Butler</a></li>
 									<li><a href="Profile_ChristopherDuncan.html">Christopher Duncan</a></li>
-									<li><a href="Profile_MattFiggess.html">Matt Figgess</a></li>
+									<li><a href="Profile_MattF.html">Matt F</a></li>
 									<li><a href="NatalieJaenschProfile.html">Natalie Jaensch</a></li>
 									<li><a href="ThomasHarlowProfile.html">Thomas Harlow</a></li>
 								</ul>
