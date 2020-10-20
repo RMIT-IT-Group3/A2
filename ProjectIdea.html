@@ -22,93 +22,157 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 				<!-- Header -->
 				<header id="header">
-					<a href="index.html" class="logo"><strong>FlickDev Group</strong></a>
+					<a href="index.html" class="logo"><strong>Assessment 2</strong> | FlickDev Group</a>
+
 				</header>
 
-				<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h1>Project Idea</h1>
-						</section>
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Project Idea</h1>
+					</header>
 
-						<!-- Section -->
-						<section>
+					<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
 
+					<h2>Overview</h2>
+					<p>FlickDeck is an app developed to streamline decisions of what content on various streaming platforms to consume by linking user accounts in order to create a shared list of “liked” content chosen in a swipe left or right method made popular by applications such as Tinder.</p>
 
-							<hr class="major" />
+					<h2>Motivation</h2>
+					<p>Content streaming services have become the new norm for most households preferred method of entertainment, in Australia alone Netflix has 11.9 million subscribers and when it comes to deciding what to watch and 2016 American study found that on average users spend 17.8 minute browsing Netflix before choosing something to watch, and that 40 percent of users wanted to watch something deferent to their partner or spouse. While curator and aggregator apps such as reelgood and dinggo, (of which are unavailable to the Australian market at this stage) exist they do not focus on issue of partners not agreeing on something to watch where as FlickDeck’s specific purpose is to curate a list for a selected linked user group for consumption.</p>
 
-							<ul class="actions">
-								<li><a href="index.html" class="button">Return to Homepage</a></li>
+					<h2>Description</h2>
+					<p>FlickDeck could crudely be summed up as “Tinder for movies” in which users will be shown the poster/title card for a movie or show and the user is prompted to either swipe right if they are interested in the content or left if they are not interested. The main function of the app is that users will link their account with another user account, for example a partner or spouse, both of the users with linked accounts will be shown the same content on their separate devices. when users have both swiped right the selected piece of content will be added to a list that the users have access to and they will be alerted to the match. The content the app displays will be taken from a database of content that is available on selected streaming services (Netflix, Amazon, Stan etc.) that the users will indicate they have access to when creating an account.</p>
+					<p>The overall functionality and user experience within the app itself is purposely simple in an effort to have a streamlined decision process when users sit down to enjoy content, the users simply load up their lists of shared interests to select from rather than browsing for extended periods. There is also the possibility of having accounts linked to users streaming service accounts so that when a match is made it can be added to users' watch queues within the streaming service applications themselves. Streaming service account linking is however not a concern within the first iteration of this project.</p>
+
+					<h2>Tools and Technologies</h2>
+					<p>The development of this project will require a code editor such as Atom to edit the HTML, CSS and Java Script for any web interface or alternatively platforms such as phonegap or ionic framework could be employed. A compiler (Eclipse) and relevant IDEs and plugins are required to develop Swift and Kotlin applications or applications such as asswing2app that required no coding experience could be used. Prototyping can be completed using Figma, Sketch or Adobe XD and team collaboration with Microsoft Teams, Word, Excel and Miro.  A database will also need to be established to store the required data such as movie artwork, titles, list of actors, release date, runtime etc. This database would need to be cloud based and could be established using MariaDB.</p>
+					<p>Software required to develop the project:</p>
+					<p><li>Atom</li>
+						<li>Eclipse</li>
+						<li>Figma</li>
+						<li>GitHub</li>
+						<li>MariaDB</li>
+						<li>Microsoft Teams</li>
+						<li>Microsoft Word</li>
+						<li>Miro</li></p>
+
+						<h3>Figma</h3>
+						<p>Figma is a design prototyping and tool what can be used throughout the design and creation phases of digital products to create wireframes, design systems, prototypes and test. It is currently ranked as the second most popular UI design, and prototyping tool making very strong gains on Sketch – nearly doubling the number of users in the UI since 2018 (UXTools.co 2019). The application can be used directly through a web browser or windows and mac desktop apps can be downloaded if desired. iOS and Android apps are also available for download to allow for the live previewing of files in a test environment. (Figma 2020).</p>
+						<p>The application is highly focused on collaborative workflows with the ability to edit files together in real-time or to simply view the action in "observation mode". Files are also supported by version history with the ability to view what changes have been made by individual users. Access to the application is split into three pricing tiers Starter, Professional and Organisation with pricing ranging from free with limited use and users on the starter plan, $12usd per month for each user on the Professional plan or $45usd per month on the Organisation level plan. Students are eligible for free access to the Professional plan. (Figma 2020).</p>
+						<h3>The Open Movie Database</h3>
+						<p>When developing the FlickDeck application, an open-source API like The Open Movie Database (OMDb) could be used in the searching and filtering of movie and TV shows (OMDb API, n.d.).</p>
+						<p>Available as a web service online, the OMDb API obtains information about movies and TV shows from a database that is contributed to and maintained by its users. Obtaining a free API key will allow an application or website to search for a movie or TV show by title and return data containing the content’s year of release, content rating, runtime, genre, director and writer, cast, plot, awards & nominations, an image of the poster, and even user ratings through popular content website IMDB.</p>
+						<p>When a user likes or swipes right in FlickDeck on a displayed movie or TV show, the OMDb API could be used to query the database for that approved content and determine key factors including genre, cast, directors & writers, and year of release. This data could then be used to develop a viewing profile and allow FlickDeck to suggest more appropriate, relatable content.</p>
+
+						<h3>MariaDB</h3>
+						<p>Some form of database management system (DBMS), such as the open source MariaDB server (MariaDB Foundation, n.d.), would be required to store, sort, categorise, and establish links between the compiled movie and TV show data. Available through GitHub (GitHub, Inc. 2020), MariaDB Server is a relational database tool that organises data into tables which can be linked, or related, based on common attributes. With multiple fields for each record in the database, MariaDB Server allows for quick comparison between records and to create a new table using a single query.</p>
+						<p>As an example, a FlickDeck user may like or swipe right on a romantic-comedy movie released in 2008, starring Jane and John Doe. Based on this basic data, the MariaDB server could be queried to locate and return records that contain at least 2 of the following attributes:</p>
+						<p><ol>
+							<li>Year of release: 2008</li>
+							<li>Genre: romance, comedy</li>
+							<li>Cast: Jane Doe, John Doe</li>
+						</ol></p>
+						<p>These records would be returned as a singular table that could be used to display to the user relatable content. By storing more details about the movie or TV show and narrowing the scope of the database query, the relational database will return records that closer match the user’s viewing preferences and could help suggest more relatable content. A relational database could also compare and find similarities between multiple user’s data tables. MariaDB Server also allows for cloud integration.</p>
+
+						<h3>Unoffical API’s and Data Scraping</h3>
+						<p>In 2014 Netflix shutdown its public API, this creates a problem early on in the development of FlickDeck as the application has no access to an established database of the platforms current offerings to pull from in order to display user’s with intended content from the streaming platform.</p>
+						<p>There are several unofficial API’s such as Guidebox API that offer all the data and resources that can be pulled from streaming services but for a price.  These unofficial API’s are able to obtain their data through data scrapping.  Data scraping is a process in which data is extracted from readable text from external sources such as information stored in the HTML code of a website ((McClendon, 2015). Internally Netflix utilises an API to transfer information to its mobile application (Netflix Data Scraping API | Stevesie Data, 2020), it is this connection that can be intercepted to obtain the API data necessary for this project.</p>
+						<p>For a data scraping program to be able to intercept these connections the endpoints that handle the data wanted must be located. The process for this is fairly involved and requires virtualisation of the application on a computer based virtual phone operating system such as android and a network activity monitoring program such as Charles (McClendon, 2015).Using the app to go through actions that may net the access points of information we need such as clicking more information on a movie may give access to an endpoint that handles such data (McClendon, 2015). Once the appropriate points are found is when a data scraper program can be developed. Using the http URL’s that have been observed a scraper program can make pull requests from the same points to then store the data in a separate repository for the FlickDev team to access (McClendon, 2015). The implementation of such a strategy is subject to experience and resource availability as it may prove more economical for the development team to simply pay a fee to access an established API.</p>
+
+						<h2>Skills Required</h2>
+						<p>A proficient skill set in coding will most likely be needed in this project as well as design skills when it comes to the user interface of the program this could be mocked up inproto.io and further transferred through to adobe applications to be worked upon further. A team that has experience in not only developing but maintaining an online operating service would be beneficial to the project.</p>
+						<ol>
+							<li>iOS and Android apps</li>
+							<ul>
+								<li>iOS app development would require Swift (Apple, 2020).</li>
+								<li>Android app can be written in Kotlin (Android, 2020).</li>
 							</ul>
+							<li>Website</li>
+							<ul>
+								<li>HTML, CSS and JavaScript (GeeksforGeeks, 2020).</li>
+							</ul>
+							<li>Database</li>
+							<ul>
+								<li>MySql, PHP, and Java Script (Spinx, 2020).</li>
+							</ul>
+						</ol>
 
-						</section>
+						<h2>Outcome</h2>
+						<p>If the project is successful it is reasonable to assume that on average more content will be consumed on a whole and that users of streaming services particularly those in households that watch content together will have a more enjoyable experience. Further into the future it is possible that the concept and execution of this application could be fully integrated into streaming services as they strive to provide a better user experience for their customers.</p>
 
+						<hr class="major" />
+
+						<ul class="actions">
+							<li><a href="index.html" class="button">Return to Homepage</a></li>
+						</ul>
+
+					</section>
+
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+
+
+
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="index.html">Homepage</a></li>
+							<li><span class="opener">Team Profiles</span>
+								<ul>
+									<li><a href="#">Andrew Butler</a></li>
+									<li><a href="Profile_ChristopherDuncan.html">Christopher Duncan</a></li>
+									<li><a href="Profile_MattFiggess.html">Matt Figgess</a></li>
+									<li><a href="NatalieJaenschProfile.html">Natalie Jaensch</a></li>
+									<li><a href="ThomasHarlowProfile.html">Thomas Harlow</a></li>
+								</ul>
+								<li>
+									<span class="opener">Industry Data</span>
+									<ul>
+										<li><a href="IndustryData-CyberSecurityExpert.html">Andrew B - Cybersecurity Expert</a></li>
+										<li><a href="IndustryData_ICTManager.html">Christopher D - ICT Manager</a></li>
+										<li><a href="IndustryData_WebDev.html">Matt F - Web Developer</a></li>
+										<li><a href="IndustryData_HelpdeskSupportTechnician.html">Natalie J - Helpdesk Support Technician</a></li>
+										<li><a href="IndustryData_PenetrationTester.html">Thomas H - Penetration Tester</a></li>
+									</ul>
+								</li>
+								<li><a href="IT Work.html">IT Work</a></li>
+								<li>
+									<span class="opener">IT Technologies</span>
+									<ul>
+										<li><a href="AutonomousVehicles.html">Autonomous Vehicles</a></li>
+										<li><a href="ITTechnologies_CloudComputing.html">Cloud, Services, Servers</a></li>
+										<li><a href="MachineLearningReport.html">Machine Learning</a></li>
+										<li><a href="CybersecurityReport">Cybersecurity</a></li>
+									</ul>
+									<li><a href="ProjectIdea.html">Project Idea</a></li>
+									<li><a href="Reflections.html">Reflections</a></li>
+									<li><a href="References.html">References</a></li>
+								</ul>
+							</nav>
+
+							<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							</footer>
+
+						</div>
 					</div>
+
 				</div>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+				<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 
-
-
-						<!-- Menu -->
-						<nav id="menu">
-							<header class="major">
-								<h2>Menu</h2>
-							</header>
-							<ul>
-								<li><a href="index.html">Homepage</a></li>
-								<li><span class="opener">Team Profiles</span>
-									<ul>
-										<li><a href="#">Andrew Butler</a></li>
-										<li><a href="Profile_ChristopherDuncan.html">Christopher Duncan</a></li>
-										<li><a href="Profile_MattFiggess.html">Matt Figgess</a></li>
-										<li><a href="NatalieJaenschProfile.html">Natalie Jaensch</a></li>
-										<li><a href="ThomasHarlowProfile.html">Thomas Harlow</a></li>
-									</ul>
-									<li>
-										<span class="opener">Industry Data</span>
-										<ul>
-											<li><a href="IndustryData-CyberSecurityExpert.html">Andrew B - Cybersecurity Expert</a></li>
-											<li><a href="IndustryData_ICTManager.html">Christopher D - ICT Manager</a></li>
-											<li><a href="IndustryData_WebDev.html">Matt F - Web Developer</a></li>
-											<li><a href="IndustryData_HelpdeskSupportTechnician.html">Natalie J - Helpdesk Support Technician</a></li>
-											<li><a href="IndustryData_PenetrationTester.html">Thomas H - Penetration Tester</a></li>
-										</ul>
-									</li>
-									<li><a href="IT Work.html">IT Work</a></li>
-									<li>
-										<span class="opener">IT Technologies</span>
-										<ul>
-											<li><a href="AutonomousVehicles.html">Autonomous Vehicles</a></li>
-											<li><a href="ITTechnologies_CloudComputing.html">Cloud, Services, Servers</a></li>
-											<li><a href="MachineLearningReport.html">Machine Learning</a></li>
-											<li><a href="CybersecurityReport">Cybersecurity</a></li>
-										</ul>
-										<li><a href="ProjectIdea.html">Project Idea</a></li>
-										<li><a href="Reflections.html">Reflections</a></li>
-										<li><a href="References.html">References</a></li>
-									</ul>
-								</nav>
-
-								<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-							</div>
-						</div>
-
-					</div>
-
-					<!-- Scripts -->
-					<script src="assets/js/jquery.min.js"></script>
-					<script src="assets/js/browser.min.js"></script>
-					<script src="assets/js/breakpoints.min.js"></script>
-					<script src="assets/js/util.js"></script>
-					<script src="assets/js/main.js"></script>
-
-				</body>
-				</html>
+			</body>
+			</html>
